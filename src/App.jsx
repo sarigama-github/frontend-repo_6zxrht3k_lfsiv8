@@ -1,5 +1,5 @@
 import React from 'react'
-import { Spline } from '@splinetool/react-spline'
+import Spline from '@splinetool/react-spline'
 import { motion } from 'framer-motion'
 import { ArrowRight, CheckCircle2, Sparkles, Gauge, Heart, Clock, MessageCircle, Shield, Settings, Stars, Rocket, PlayCircle, Facebook, Instagram, Twitter, Mail } from 'lucide-react'
 
