@@ -77,7 +77,11 @@ function Hero() {
           <div className="relative aspect-[4/3] md:aspect-[5/4] lg:aspect-[7/5]">
             <div className="absolute inset-0 rounded-3xl bg-[#F4F9FF]" />
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="absolute inset-2 rounded-3xl bg-white/90 backdrop-blur border border-[#E5E7EB] shadow-xl overflow-hidden">
+              {/* Spline scene */}
               <Spline scene="https://prod.spline.design/4cHQr84zOGAHOehh/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+              {/* Brand tint overlay for visual alignment */}
+              <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,rgba(74,168,229,0.35),rgba(15,33,71,0.35))] mix-blend-multiply" />
+              <div className="pointer-events-none absolute -inset-8 bg-[radial-gradient(60%_60%_at_70%_30%,rgba(74,168,229,0.25),transparent_60%)]" />
             </motion.div>
           </div>
         </div>
@@ -323,11 +327,11 @@ function CTA() {
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="rounded-3xl bg-[#0F2147] p-1">
           <div className="rounded-3xl bg-[#0F2147] p-8 md:p-12 text-center text-white">
-            <h3 className="text-2xl sm:text-3xl font-extrabold">Create Smarter Responses — Instantly.</h3>
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-white">Create Smarter Responses — Instantly.</h3>
             <p className="mt-3 text-white/80">Save time, maintain consistency, and boost engagement.</p>
             <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
               <a href="#" className="inline-flex items-center gap-2 rounded-xl bg-[#4AA8E5] text-[#0F2147] px-6 py-3 font-semibold shadow-lg hover:bg-[#3F98D0]">Try AURA Free <Rocket size={18} /></a>
-              <a href="#demo" className="inline-flex items-center gap-2 rounded-xl border border-white/40 text-white px-6 py-3 font-semibold hover:bg-white/10">Book a Demo <CalendarIcon /></a>
+              <a href="#demo" className="inline-flex items-center gap-2 rounded-xl border border-white/40 text-white px-6 py-3 font-semibold hover:bg:white/10 hover:bg-white/10">Book a Demo <CalendarIcon /></a>
             </div>
             <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-white/10 text-white/80 px-3 py-1 text-xs">AURA — Creative Intelligence for Every Brand Voice.</div>
           </div>
