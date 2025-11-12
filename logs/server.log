@@ -3,7 +3,14 @@
 > vite
 
 
-  VITE v5.4.20  ready in 214 ms
+  VITE v5.4.20  ready in 242 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.17.17:3000/
+[vite:css] @import must precede all other statements (besides @charset or empty @layer)
+4  |  
+5  |  /* Brand fonts import (DM Sans for body). Arial MT Pro used for headings with safe fallbacks */
+6  |  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+   |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+7  |  
+8  |  @layer base {
